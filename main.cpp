@@ -2,18 +2,44 @@
 #include <iostream>
 #include <stdlib.h>
 #include <string>
+#include <vector>
 #include "Card.h"
+#include "json.hpp"
+#include <fstream>
 
 //Function prototypes
 int user_input(int range);
 void main_menu();
 void main_game();
 void instructions();
+void view_deck();
+void playerTurn();
+void cpuTurn();
+void deal_hands();
+
+using json = nlohmann::json;
 
 //Variable declarations
-Card testCard("name", 1, 1, 1);
+
+json cards;
+
+
+std::vector<Card> deck;
+std::vector<Card> playerHand;
+std::vector<Card> cpuHand;
 
 int main() {
+
+    //https://rachelnertia.github.io/programming/2016/07/03/json-hpp/
+    std::ifstream cardsFile("Cards.json", std::ifstream::binary);
+    cards = json::parse(cardsFile);
+    cardsFile.close();
+
+    for (int i = 0; i < cards.size(); i++){
+        Card tempCard(cards[i]["Name"].dump(), stoi(cards[i]["Attack"].dump()), stoi(cards[i]["Defence"].dump()), stoi(cards[i]["Agility"].dump()));
+        deck.push_back(tempCard);
+    }
+
     main_menu();
 }
 
@@ -44,30 +70,32 @@ int user_input(int range) {
 
 void main_menu() {
     std::cout << "---------->SPACE WARRIOR<----------" << std::endl << std::endl << std::endl << std::endl;
-    std::cout << "            -Main Menu-            " << std::endl;
+    std::cout << "            -Main Menu-            " << std::endl << std::endl;
     std::cout << "         1.  Play Game            " << std::endl;
     std::cout << "        2.  Instructions          " << std::endl;
-    std::cout << "         3.  Exit Game            " << std::endl;
+    std::cout << "         3.  View Deck          " << std::endl;
+    std::cout << "         4.  Exit Game            " << std::endl;
 
-    int selection = user_input(3);
+    int selection = user_input(4);
 
-    if (selection == 1) {
+    switch (selection) {
+    case 1:
         main_game();
-    }
-    else if (selection == 2) {
+    
+    case 2:
         instructions();
-    } else {
-        std::cout << "Exiting Game!";
+
+    case 3:
+        view_deck();
+
+    case 4:
+        std::cout << "Exiting the game!";
         exit(0);
     }
 }
 
 void main_game() {
     std::cout << "Main Game" << std::endl;
-    std::cout << testCard.get_name() << std::endl;
-    std::cout << testCard.get_attack() << std::endl;
-    std::cout << testCard.get_defence() << std::endl;
-    std::cout << testCard.get_agility() << std::endl;
 }
 
 void instructions() {
@@ -77,8 +105,32 @@ void instructions() {
 
     std::cout << "Enter 1 to return to the Main Menu" << std::endl;
     int selection = user_input(1);
+    switch (selection) {
+        case 1:
+            main_menu();
+    }
+}
 
-    if (selection == 1) {
+void playerTurn(){
+    std::cout << "Your turn!" << std::endl;
+    std::cout << "Choose a card from your deck:" << std::endl;
+}
+
+void deal_hands() {
+
+}
+
+void view_deck() {
+    std::cout << "            -Current Deck-            " << std::endl << std::endl << std::endl;
+
+    for (int i = 0; i < deck.size(); i++) {
+        deck[i].print_card();
+    }
+
+    std::cout << "Enter 1 to return to  the Main Menu" << std::endl;
+    int selection = user_input(1);
+    switch (selection) {
+    case 1:
         main_menu();
     }
 }

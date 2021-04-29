@@ -12,7 +12,11 @@ Card::Card(std::string name, int attack, int defence, int agility){
 }
 
 void Card::print_card(){
-    std::cout << "____________________________________" << std::endl;
-
+    std::cout << "_________________________" << std::endl;
+    std::cout << "       Name : " << name_ << std::endl;
+    std::cout << "     Attack : " << attack_ << std::endl;
+    std::cout << "    Defence : " << defence_ << std::endl;
+    std::cout << "    Agility : " << agility_ << std::endl;
+    std::cout << "_________________________" << std::endl;
 }
 

@@ -1,122 +1,135 @@
 [
     {
-        "Name":"Earthling",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Earthling",
+            "Attack":5,
+            "Defence":7,
+            "Agility":4
+        
     },
     {
-        "Name":"Terran Soldier",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Terran Soldier",
+            "Attack":7,
+            "Defence":8,
+            "Agility":5
+        
     },
     {
-        "Name":"Terran Commander",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Terran Commander",
+            "Attack":8,
+            "Defence":9,
+            "Agility":3
+        
     },
     {
-        "Name":"Terran Gravity Tank",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Terran Gravity Tank",
+            "Attack":7,
+            "Defence":7,
+            "Agility":1
+        
     },
     {
-        "Name":"Interplanetary Jet Fighter",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Interplanetary Jet Fighter",
+            "Attack":9,
+            "Defence":3,
+            "Agility":10
+        
     },
     {
-        "Name":"Orbital Cruiser",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Orbital Cruiser",
+            "Attack":5,
+            "Defence":10,
+            "Agility":1
+        
     },
     {
-        "Name":"LTS Laser Platform",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"LTS Laser Platform",
+            "Attack":10,
+            "Defence":3,
+            "Agility":1
+        
     },
     {
-        "Name":"Martian",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Martian",
+            "Attack":7,
+            "Defence":4,
+            "Agility":6
+        
     },
     {
-        "Name":"Martian Glider",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Martian Glider",
+            "Attack":8,
+            "Defence":1,
+            "Agility":8
+        
     },
     {
-        "Name":"Space Gunship",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Space Gunship",
+            "Attack":8,
+            "Defence":5,
+            "Agility":3
+        
     },
     {
-        "Name":"Solar Sailer",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Solar Sailer",
+            "Attack":5,
+            "Defence":4,
+            "Agility":9
+        
     },
     {
-        "Name":"Interstellar Freighter",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Interstellar Freighter",
+            "Attack":4,
+            "Defence":10,
+            "Agility":1
+        
     },
     {
-        "Name":"Stealth Ship",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Stealth Ship",
+            "Attack":3,
+            "Defence":10,
+            "Agility":7
+        
     },
     {
-        "Name":"Warp Drive",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Warp Drive",
+            "Attack":1,
+            "Defence":4,
+            "Agility":10
+        
     },
     {
-        "Name":"Cryosleep Complex",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Cryosleep Complex",
+            "Attack":4,
+            "Defence":8,
+            "Agility":4
+        
     },
     {
-        "Name":"Shield Generator",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Shield Generator",
+            "Attack":5,
+            "Defence":10,
+            "Agility":1
+        
     },
     {
-        "Name":"Military Command Ship",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Military Command Ship",
+            "Attack":7,
+            "Defence":7,
+            "Agility":3
+        
     },
     {
-        "Name":"Mobile Rail Gun",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Mobile Rail Gun",
+            "Attack":10,
+            "Defence":5,
+            "Agility":4
+        
     },
     {
-        "Name":"Low Altitude Bomber",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
-    },
-    {
-        "Name":"Personel Carrier",
-        "Attack":"",
-        "Defence":"",
-        "Agility":""
+            "Name":"Low Altitude Bomber",
+            "Attack":7,
+            "Defence":4,
+            "Agility":6
+        
     }
 ]
