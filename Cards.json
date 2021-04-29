@@ -1,0 +1,122 @@
+[
+    {
+        "Name":"Earthling",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Terran Soldier",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Terran Commander",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Terran Gravity Tank",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Interplanetary Jet Fighter",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Orbital Cruiser",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"LTS Laser Platform",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Martian",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Martian Glider",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Space Gunship",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Solar Sailer",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Interstellar Freighter",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Stealth Ship",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Warp Drive",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Cryosleep Complex",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Shield Generator",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Military Command Ship",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Mobile Rail Gun",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Low Altitude Bomber",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    },
+    {
+        "Name":"Personel Carrier",
+        "Attack":"",
+        "Defence":"",
+        "Agility":""
+    }
+]
