@@ -128,7 +128,7 @@
     {
             "Name":"Low Altitude Bomber",
             "Attack":7,
-            "Defence":4,
+            "Defence":3,
             "Agility":6
         
     }

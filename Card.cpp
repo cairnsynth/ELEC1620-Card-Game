@@ -1,22 +1,40 @@
-#include "Card.h"
-#include <string>
+//Card class file
+#include "Card.h"           //Include the Card header file
 
-//Card class constructor
-Card::Card(std::string name, int attack, int defence, int agility){
-    //card variables
-    name_ = name;
+#define CARD_WIDTH 31       //Constant variable for the width of each card
+
+Card::Card(std::string name, int attack, int defence, int agility){         //Card class constructor
+
+    name_ = name;                 //card variables for each statistic
     attack_ = attack;
     defence_ = defence;
     agility_ = agility;
 
 }
 
-void Card::print_card(){
-    std::cout << "_________________________" << std::endl;
-    std::cout << "       Name : " << name_ << std::endl;
-    std::cout << "     Attack : " << attack_ << std::endl;
-    std::cout << "    Defence : " << defence_ << std::endl;
-    std::cout << "    Agility : " << agility_ << std::endl;
-    std::cout << "_________________________" << std::endl;
+void Card::print_card(){        //Method that handles printing the card in a more interesting format than just the statistics
+
+    int nameSpacing_ = int((CARD_WIDTH - (5 + name_.length())) / 2);        // Calculating the number of spaces needed either side of the name to centre it on the card
+
+    std::cout << " _____________________________ " << std::endl;            //printing the top of the card
+    std::cout << "/                             \\ " << std::endl;
+    std::cout << "  ---------------------------  " << std::endl;
+
+    for (int i = 0; i < nameSpacing_; i++) {        //For each space needed, print a space
+        std::cout << " ";
+    }
+    
+    std::cout << "Name:" << name_;                  //print the name
+
+    for (int i = 0; i < nameSpacing_; i++) {        //For each space needed, print a space
+        std::cout << " ";
+    }
+    std::cout << std::endl << std::endl;
+
+    std::cout << "        Attack : " << attack_ << std::endl;           //Print each card statistic on a new line
+    std::cout << "       Defence : " << defence_ << std::endl;
+    std::cout << "       Agility : " << agility_ << std::endl;
+    std::cout << "  ---------------------------  " << std::endl;        //Print the bottom of the card
+    std::cout << "\\_____________________________/" << std::endl;
 }
 
