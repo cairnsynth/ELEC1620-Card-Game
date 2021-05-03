@@ -173,15 +173,45 @@ void game_setup() {
 
 //Function to handle printing of the game instructions
 void instructions() {
-    clear_screen(100);
+    clear_screen(100);                          //Clears screen
 
-    std::cout << "           -Instructions-" << std::endl << std::endl;
+    std::cout << "           -Instructions-" << std::endl << std::endl;             //Prints page header
 
-    //instructions go here
+    std::cout << "In this game you will be dealt a random hand of cards from the deck." << std::endl;
+    std::cout << "The computer will also be dealt a random hand." << std::endl;
+    std::cout << "The size of your hand can be chosen at the beginning of the game." << std::endl;
+    std::cout << std::endl;
+    std::cout << "The game begins on your turn:" << std::endl;
+    std::cout << "1. Pick a card to play." << std::endl;
+    std::cout << "2. Pick a statistic from that card to play." << std::endl;
+    std::cout << "3. The computer will then choose a card to play." << std::endl;
+    std::cout << "4. If your card has a higher value in the chosen statistic, you win the turn." << std::endl;
+    std::cout << "5. If not, you lose!" << std::endl;
+    std::cout << "6. Whoever loses the turn has the card they played removed from their deck." << std::endl;
+    std::cout << std::endl;
+    std::cout << "Then it is the computers turn:" << std::endl;
+    std::cout << "1. It will choose a card to play." << std::endl;
+    std::cout << "2. It will then choose a statistic from that card." << std::endl;
+    std::cout << "3. You must pick a card in your hand with a higher value in that statistic." << std::endl;
+    std::cout << "4. If your chosen card has a higher value in the chosen statistic, you win the turn." << std::endl;
+    std::cout << "5. If not, you lose!" << std::endl;
+    std::cout << "6. Whoever loses the turn has the card they played removed from their deck." << std::endl;
+    std::cout << std::endl;
+    std::cout << "Once either you or the computer loses all the cards in their hand, the game is over!" << std::endl;
+    std::cout << "The player with cards remaining wins, and the other player loses." << std::endl;
+    std::cout << std::endl;
+    std::cout << "Once the game is over you will return to the main menu." << std::endl;
+    std::cout << std::endl;
+    std::cout << std::endl;
+    std::cout << "To view all of the cards loaded into the deck, choose the \"View Deck\" option on the" << std::endl;
+    std::cout << "main menu." << std::endl;
+    std::cout << std::endl;
+    std::cout << "The game can be closed by chosing the \"Exit Game\" option on the main menu." << std::endl << std::endl;
 
     std::cout << "Enter 1 to return to the Main Menu" << std::endl;
-    int selection = user_input(1);
-    switch (selection) {
+
+    int selection = user_input(1);              //Prompts user input to return to menu
+    switch (selection) {                        //If input is 1, returns to menu
         case 1:
             main_menu();
     }
