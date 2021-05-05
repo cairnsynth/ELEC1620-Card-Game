@@ -5,10 +5,10 @@
 
 Card::Card(std::string name, int attack, int defence, int agility){         //Card class constructor
 
-    name_ = name;                 //card variables for each statistic
-    attack_ = attack;
-    defence_ = defence;
-    agility_ = agility;
+    set_name(name);                 //card variables for each statistic
+    set_attack(attack);
+    set_defence(defence);
+    set_agility(agility);
 
 }
 

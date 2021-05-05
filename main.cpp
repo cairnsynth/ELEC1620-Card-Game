@@ -3,11 +3,11 @@
 #include <stdlib.h>
 #include <string>
 #include <vector>
-#include "Card.h"
-#include "json.hpp"
 #include <fstream>
 #include <ctime>
 #include <cmath>
+#include "Card.h"
+#include "json.hpp"
 
 //Function prototypes
 void clear_screen(int amount);
@@ -16,8 +16,8 @@ void main_menu();
 void game_setup();
 void instructions();
 void view_deck();
-void playerTurn();
-void cpuTurn();
+void player_turn();
+void cpu_turn();
 void deal_hands(int handSize);
 void game_loop();
 
@@ -73,7 +73,7 @@ void clear_screen(int amount){          //Takes in the number of new lines neede
 
 }
 
-//Function to handle user input, takes in the range of options allowes
+//Function to handle user input, takes in the range of options allows
 int user_input(int range) {
     std::string input;          //String to contain the user input
 
@@ -117,7 +117,7 @@ void main_menu() {
     std::cout << "---------> SPACE WARRIOR <---------" << std::endl << std::endl << std::endl << std::endl;         //printing the main menu
     std::cout << "            -Main Menu-            " << std::endl << std::endl;
     std::cout << "         1.  Play Game            " << std::endl;
-    std::cout << "        2.  Instructions          " << std::endl;
+    std::cout << "         2.  Instructions         " << std::endl;
     std::cout << "         3.  View Deck          " << std::endl;
     std::cout << "         4.  Exit Game            " << std::endl;
 
@@ -134,7 +134,7 @@ void main_menu() {
         view_deck();
 
     case 4:                                 //if 4, exits game
-        std::cout << "Exiting the game!";
+        std::cout << "Exiting the game!" << std::endl;
         exit(0);                            //exits program with no errors
     }
 }
@@ -182,7 +182,7 @@ void instructions() {
     std::cout << "The size of your hand can be chosen at the beginning of the game." << std::endl;
     std::cout << std::endl;
     std::cout << "The game begins on your turn:" << std::endl;
-    std::cout << "1. Pick a card to play." << std::endl;
+    std::cout << "1. Pick a card to play by entering the index of the card in your hand." << std::endl;
     std::cout << "2. Pick a statistic from that card to play." << std::endl;
     std::cout << "3. The computer will then choose a card to play." << std::endl;
     std::cout << "4. If your card has a higher value in the chosen statistic, you win the turn." << std::endl;
@@ -218,7 +218,7 @@ void instructions() {
 }
 
 //Function to handle a player's turn
-void playerTurn(){
+void player_turn(){
     clear_screen(20);                       //clears screen
 
     std::cout << "Your turn!" << std::endl << std::endl;                //printing page header
@@ -294,7 +294,7 @@ void playerTurn(){
 }
 
 //Function handling CPU's turn
-void cpuTurn() {
+void cpu_turn() {
     clear_screen(20);                       //clear screen
 
     std::cout << "It's the computer's turn now!" << std::endl << std::endl;         //Printing page header
@@ -418,7 +418,7 @@ void game_loop() {
 
         if (playerHand.size() > 0 && cpuHand.size() > 0) {      //If both the player and CPU still have cards
 
-            playerTurn();                       //Calls player_turn()
+            player_turn();                       //Calls player_turn()
 
         } else {                                //If either the player or CPU has no cards    
 
@@ -428,7 +428,7 @@ void game_loop() {
 
         if (playerHand.size() > 0 && cpuHand.size() > 0) {      //If both the player and CPU still have cards
 
-            cpuTurn();                          //Calls cpu_turn()
+            cpu_turn();                          //Calls cpu_turn()
 
         } else {                                //If either the player or CPU has no cards
 
